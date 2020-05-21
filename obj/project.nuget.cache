@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "64gtiDCiC0afJK5a243mn2EPRHiokc1ksnPh0E7pnmb9Wp39h3/+9BosZZxTc32lo5GjeRdBA5Csch6YJkmrKA==",
+  "dgSpecHash": "Z3oqz1UuxzhkNL4mOlaoCNadNjyOgS60sj/Zh5aDqi93KjpnDzeCRJ4dNB9QBdCqHyFTJqNCOXgSBgg3A4FdVg==",
   "success": true,
-  "projectFilePath": "/Users/josemariaingavillafuerte/Documents/Net_Core/HomeFood/HomeFood.csproj",
+  "projectFilePath": "/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/HomeFood.csproj",
   "expectedPackageFiles": [
     "/Users/josemariaingavillafuerte/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/3.1.4/microsoft.aspnetcore.authentication.jwtbearer.3.1.4.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

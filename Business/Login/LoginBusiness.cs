@@ -21,7 +21,7 @@ namespace HomeFood.Business.Login
                     response.Message = "Complete los datos";
                }else{
 
-                   if(_context.Customer.Any(x => x.Email == model.Email)){
+                    if(_context.Customer.Any(x => x.Email == model.Email)){
                         response.Data = null;
                         response.Error = true;
                         response.Message = "El correo electronico ya existe";
