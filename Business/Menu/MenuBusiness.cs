@@ -10,11 +10,11 @@ using HomeFood.Helpers;
 using System.Transactions;
 using System.Collections.Generic;
 
-namespace HomeFood.Business
+namespace HomeFood.Business.Menu
 {
     public class MenuBusiness
     {
-        public ResultResponse<List<MenuResponse>> GetAllMenu(BDHomeFoodContext _context,MenuEntity model)
+        public ResultResponse<List<MenuResponse>> GetAllMenu(BDHomeFoodContext _context)
         {
             try
             {

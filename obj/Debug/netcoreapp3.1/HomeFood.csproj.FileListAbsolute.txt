@@ -281,6 +281,12 @@ D:/UPC 2020_01/SCRUM/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.csproj.CopyComple
 D:/UPC 2020_01/SCRUM/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.dll
 D:/UPC 2020_01/SCRUM/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.xml
 D:/UPC 2020_01/SCRUM/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.pdb
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.csprojAssemblyReference.cache
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.csproj.CoreCompileInputs.cache
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.MvcApplicationPartsAssemblyInfo.cs
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.MvcApplicationPartsAssemblyInfo.cache
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.AssemblyInfoInputs.cache
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.AssemblyInfo.cs
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
@@ -409,12 +415,6 @@ D:/UPC 2020_01/SCRUM/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.pdb
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.csprojAssemblyReference.cache
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.csproj.CoreCompileInputs.cache
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.MvcApplicationPartsAssemblyInfo.cs
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.MvcApplicationPartsAssemblyInfo.cache
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.AssemblyInfoInputs.cache
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.AssemblyInfo.cs
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.RazorTargetAssemblyInfo.cache
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.csproj.CopyComplete
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/staticwebassets/HomeFood.StaticWebAssets.Manifest.cache

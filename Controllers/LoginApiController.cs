@@ -25,7 +25,6 @@ namespace HomeFood.Controllers
             _context = context;
             _config = config;
         }
-
         [HttpPost("collaboratorlogin")]
         public async Task<IActionResult> PostLogInCollaborator(LoginEntity model)
         {
