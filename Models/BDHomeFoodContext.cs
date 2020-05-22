@@ -32,7 +32,7 @@ namespace HomeFood.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 optionsBuilder.UseSqlServer("Server=database-1.cqafasqmheaz.us-east-2.rds.amazonaws.com;Database=BDHomeFood;User=admin;Password=Xycybib7;ConnectRetryCount=0;MultipleActiveResultSets=true;Trusted_Connection=False;");
             }
         }
@@ -325,8 +325,6 @@ namespace HomeFood.Models
 
             modelBuilder.Entity<ShopCar>(entity =>
             {
-                entity.Property(e => e.ShopCarId).ValueGeneratedNever();
-
                 entity.Property(e => e.Price).HasColumnType("decimal(18, 2)");
 
                 entity.HasOne(d => d.Customer)

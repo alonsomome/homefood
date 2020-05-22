@@ -34,5 +34,22 @@ namespace HomeFood.Controllers
                 return BadRequest(response);
             }
         }
+
+        [HttpPost("addshopcars")]
+        public async Task<IActionResult> AddMenuCarShop(ShopCarEntity model)
+        {
+            MenuBusiness menuBusiness = new MenuBusiness();
+
+            var response = menuBusiness.AddMenuCarShop(_context, model);
+
+            if (response.Error == false)
+            {
+                return Ok(response);
+            }
+            else
+            {
+                return BadRequest(response);
+            }
+        }
     }
 }

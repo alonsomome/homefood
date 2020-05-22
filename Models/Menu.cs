@@ -19,7 +19,7 @@ namespace HomeFood.Models
         public string State { get; set; }
         public int? QuantityMenuCurrent { get; set; }
         public int? MenuTypeId { get; set; }
-        
+
         public virtual Collaborator Collaborator { get; set; }
         public virtual MenuType MenuType { get; set; }
         public virtual ICollection<Photo> Photo { get; set; }
