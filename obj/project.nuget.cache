@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Z3oqz1UuxzhkNL4mOlaoCNadNjyOgS60sj/Zh5aDqi93KjpnDzeCRJ4dNB9QBdCqHyFTJqNCOXgSBgg3A4FdVg==",
+  "dgSpecHash": "vnJ1nXjrEMseRHamrKEvan3zRmkrVhM74eZf5aNCqix/6Zl++Kf8xyjWATWN/ka3rOpACM0g6Zr3ioIibmeA1A==",
   "success": true,
   "projectFilePath": "/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/HomeFood.csproj",
   "expectedPackageFiles": [
@@ -11,7 +11,7 @@
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.aspnetcore.razor.runtime/2.2.0/microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
     "/Users/josemariaingavillafuerte/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/josemariaingavillafuerte/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
-    "/Users/josemariaingavillafuerte/.nuget/packages/microsoft.codeanalysis.analyzers/2.9.4/microsoft.codeanalysis.analyzers.2.9.4.nupkg.sha512",
+    "/Users/josemariaingavillafuerte/.nuget/packages/microsoft.codeanalysis.analyzers/3.0.0/microsoft.codeanalysis.analyzers.3.0.0.nupkg.sha512",
     "/Users/josemariaingavillafuerte/.nuget/packages/microsoft.codeanalysis.common/3.3.1/microsoft.codeanalysis.common.3.3.1.nupkg.sha512",
     "/Users/josemariaingavillafuerte/.nuget/packages/microsoft.codeanalysis.csharp/3.3.1/microsoft.codeanalysis.csharp.3.3.1.nupkg.sha512",
     "/Users/josemariaingavillafuerte/.nuget/packages/microsoft.codeanalysis.csharp.workspaces/3.3.1/microsoft.codeanalysis.csharp.workspaces.3.3.1.nupkg.sha512",

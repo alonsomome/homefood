@@ -11,6 +11,7 @@ namespace HomeFood.Models
         public int? Quantity { get; set; }
         public decimal? Price { get; set; }
         public int? OrderId { get; set; }
+        public string State { get; set; }
 
         public virtual Customer Customer { get; set; }
         public virtual Menu Menu { get; set; }

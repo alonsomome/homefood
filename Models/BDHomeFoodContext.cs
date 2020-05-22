@@ -327,6 +327,10 @@ namespace HomeFood.Models
             {
                 entity.Property(e => e.Price).HasColumnType("decimal(18, 2)");
 
+                entity.Property(e => e.State)
+                    .HasMaxLength(3)
+                    .IsUnicode(false);
+
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.ShopCar)
                     .HasForeignKey(d => d.CustomerId)

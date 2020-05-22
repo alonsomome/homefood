@@ -16,15 +16,9 @@ namespace HomeFood.Business.Menu
     {
         public ResultResponse<List<MenuResponse>> GetAllMenu(BDHomeFoodContext _context)
         {
-            try
-            {
+            try{
                 ResultResponse<List<MenuResponse>> response = new ResultResponse<List<MenuResponse>>();
-<<<<<<< HEAD
-                    var result = _context.Menu.Select( x=> new MenuResponse{
-=======
-                // var result = _context.Menu.FirstOrDefault(x=>x.MenuId==model.MenuId);
                 var result = _context.Menu.Select( x=> new MenuResponse{
->>>>>>> 86479405dd9dfeb07d74628891d809b2d7cccfb3
                     MenuId = x.MenuId,
                     Name = x.Name,
                     Description = x.Description,
@@ -34,13 +28,7 @@ namespace HomeFood.Business.Menu
                     QuantityMenuCurrent = x.QuantityMenuCurrent,
                     MenuTypeId = x.MenuTypeId
                 } ).ToList();
-<<<<<<< HEAD
 
-                response.Data = result;
-                response.Error = false;
-                response.Message ="datos encontrados";
-                
-=======
                 
                 if(result.Count != 0){
                     response.Data = result;
@@ -51,7 +39,6 @@ namespace HomeFood.Business.Menu
                     response.Error = true;
                     response.Message ="No se encontraron datos";
                 }                
->>>>>>> 86479405dd9dfeb07d74628891d809b2d7cccfb3
                 return response;
             }
             catch (Exception ex)
@@ -60,53 +47,6 @@ namespace HomeFood.Business.Menu
             }
         }
 
-<<<<<<< HEAD
-        public ResultResponse<string> AddMenuCarShop(BDHomeFoodContext _context, ShopCarEntity model){
-            try
-            {
-                ResultResponse<string> response = new ResultResponse<string>();
-                if(model.MenuId == null){
-                    response.Data = null;
-                    response.Error = true;
-                    response.Message = "Es necesario agregar un menu la carrito";
-                    return response;
-                }
-                if(model.Quantity == null){
-                    response.Data = null;
-                    response.Error = true;
-                    response.Message = "Es necesario agregar una cantidad por cada menú";
-                    return response;
-                }
-
-                using (var ts = new TransactionScope()){
-                    ShopCar shopCar = new ShopCar();
-
-                    _context.ShopCar.Add(shopCar);
-
-                    shopCar.CustomerId = model.CustomerId;
-                    shopCar.MenuId = model.MenuId;
-                    shopCar.Quantity = model.Quantity;
-
-                    var menu = _context.Menu.FirstOrDefault(x=>x.MenuId == model.MenuId);
-
-                    shopCar.Price = menu.Price * model.Quantity;
-                    shopCar.OrderId = model.OrderId;
-
-                    _context.SaveChanges();
-                    
-                    response.Data = null;
-                    response.Error = false;
-                    response.Message = "Menu guardado en carrito con éxito";
-
-                    ts.Complete();
-                }
-                return response;
-            }
-            catch (Exception ex)
-            {                
-                throw new Exception(ex.Message);
-            }
-=======
         public ResultResponse<MenuResponse> GetById(BDHomeFoodContext _context, int id)
         {
             try
@@ -148,7 +88,133 @@ namespace HomeFood.Business.Menu
             {
                 throw new Exception(ex.Message);
             }      
->>>>>>> 86479405dd9dfeb07d74628891d809b2d7cccfb3
+
+        }
+
+        public ResultResponse<string> AddMenuCarShop(BDHomeFoodContext _context, ShopCarEntity model)
+        {
+            try
+            {
+                ResultResponse<string> response = new ResultResponse<string>();
+                if(model.MenuId == null){
+                    response.Data = null;
+                    response.Error = true;
+                    response.Message = "Es necesario agregar un menu la carrito";
+                    return response;
+                }
+                if(model.Quantity == null){
+                    response.Data = null;
+                    response.Error = true;
+                    response.Message = "Es necesario agregar una cantidad por cada menú";
+                    return response;
+                }
+
+                using (var ts = new TransactionScope()){
+                    ShopCar shopCar = new ShopCar();
+
+                    _context.ShopCar.Add(shopCar);
+
+                    shopCar.CustomerId = model.CustomerId;
+                    shopCar.MenuId = model.MenuId;
+                    shopCar.Quantity = model.Quantity;
+
+                    var menu = _context.Menu.FirstOrDefault(x=>x.MenuId == model.MenuId);
+
+                    shopCar.Price = menu.Price * model.Quantity;
+                    shopCar.OrderId = model.OrderId;
+                    shopCar.State = ConstantHelpers.Estado.Activo;
+
+                    _context.SaveChanges();
+                    
+                    response.Data = null;
+                    response.Error = false;
+                    response.Message = "Menu guardado en carrito con éxito";
+
+                    ts.Complete();
+                }
+                return response;
+            }
+            catch (Exception ex)
+            {                
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public ResultResponse<string> EditMenuCarShop(BDHomeFoodContext _context, ShopCarEntity model)
+        {
+            try
+            {
+                ResultResponse<string> response = new ResultResponse<string>();
+                if(model.MenuId == null){
+                    response.Data = null;
+                    response.Error = true;
+                    response.Message = "Es necesario agregar un menu la carrito";
+                    return response;
+                }
+                if(model.Quantity == null){
+                    response.Data = null;
+                    response.Error = true;
+                    response.Message = "Es necesario agregar una cantidad por cada menú";
+                    return response;
+                }
+
+                using (var ts = new TransactionScope()){
+                    ShopCar shopCar = new ShopCar();
+
+                    shopCar = _context.ShopCar.FirstOrDefault(x=>x.ShopCarId == model.ShopCarId);
+
+                    shopCar.CustomerId = model.CustomerId;
+                    shopCar.MenuId = model.MenuId;
+                    shopCar.Quantity = model.Quantity;
+
+                    var menu = _context.Menu.FirstOrDefault(x=>x.MenuId == model.MenuId);
+
+                    shopCar.Price = menu.Price * model.Quantity;
+                    shopCar.OrderId = model.OrderId;
+
+                    _context.SaveChanges();
+                    
+                    response.Data = null;
+                    response.Error = false;
+                    response.Message = "Menu editado en carrito con éxito";
+
+                    ts.Complete();
+                }
+                return response;
+            }
+            catch (Exception ex)
+            {                
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public ResultResponse<string> DeleteMenuCarShop(BDHomeFoodContext _context, ShopCarEntity model)
+        {
+            try
+            {
+                ResultResponse<string> response = new ResultResponse<string>();
+    
+                using (var ts = new TransactionScope()){
+                    ShopCar shopCar = new ShopCar();
+
+                    shopCar = _context.ShopCar.FirstOrDefault(x=>x.ShopCarId == model.ShopCarId);
+
+                    shopCar.State = ConstantHelpers.Estado.Inactivo;
+
+                    _context.SaveChanges();
+                    
+                    response.Data = null;
+                    response.Error = false;
+                    response.Message = "Menu eliminado del carrito";
+
+                    ts.Complete();
+                }
+                return response;
+            }
+            catch (Exception ex)
+            {                
+                throw new Exception(ex.Message);
+            }
         }
     } 
 }

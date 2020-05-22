@@ -34,22 +34,59 @@ namespace HomeFood.Controllers
                 return BadRequest(response);
             }
         }
+        [HttpGet("menus/{id}")]
+        public async Task<IActionResult> GetMenuById(int id){
+           MenuBusiness menuBusiness = new MenuBusiness();
+            var response = menuBusiness.GetById(_context,id);
+            if (response.Error == false)
+            {
+                return Ok(response);
+            }
+            else
+            {
+                return BadRequest(response);
+            }
+        }
 
-<<<<<<< HEAD
-        [HttpPost("addshopcars")]
+    [HttpPost("addmenushopcars")]
         public async Task<IActionResult> AddMenuCarShop(ShopCarEntity model)
         {
             MenuBusiness menuBusiness = new MenuBusiness();
 
             var response = menuBusiness.AddMenuCarShop(_context, model);
-=======
-        [HttpGet("menus/{id}")]
-        public async Task<IActionResult> GetMenuById(int id){
-           MenuBusiness menuBusiness = new MenuBusiness();
-            var response = menuBusiness.GetById(_context,id);
->>>>>>> 86479405dd9dfeb07d74628891d809b2d7cccfb3
+                  if (response.Error == false)
+            {
+                return Ok(response);
+            }
+            else
+            {
+                return BadRequest(response);
+            }
+        }
 
-            if (response.Error == false)
+        [HttpPut("editmenushopcars")]
+        public async Task<IActionResult> EditMenuCarShop(ShopCarEntity model)
+        {
+            MenuBusiness menuBusiness = new MenuBusiness();
+
+            var response = menuBusiness.EditMenuCarShop(_context, model);
+                  if (response.Error == false)
+            {
+                return Ok(response);
+            }
+            else
+            {
+                return BadRequest(response);
+            }
+        }
+
+        [HttpPost("deletemenushopcars")]
+        public async Task<IActionResult> DeleteMenuCarShop(ShopCarEntity model)
+        {
+            MenuBusiness menuBusiness = new MenuBusiness();
+
+            var response = menuBusiness.DeleteMenuCarShop(_context, model);
+                  if (response.Error == false)
             {
                 return Ok(response);
             }
