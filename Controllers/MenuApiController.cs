@@ -34,5 +34,20 @@ namespace HomeFood.Controllers
                 return BadRequest(response);
             }
         }
+
+        [HttpGet("menus/{id}")]
+        public async Task<IActionResult> GetMenuById(int id){
+           MenuBusiness menuBusiness = new MenuBusiness();
+            var response = menuBusiness.GetById(_context,id);
+
+            if (response.Error == false)
+            {
+                return Ok(response);
+            }
+            else
+            {
+                return BadRequest(response);
+            }
+        }
     }
 }
