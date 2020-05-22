@@ -35,12 +35,19 @@ namespace HomeFood.Controllers
             }
         }
 
+<<<<<<< HEAD
         [HttpPost("addshopcars")]
         public async Task<IActionResult> AddMenuCarShop(ShopCarEntity model)
         {
             MenuBusiness menuBusiness = new MenuBusiness();
 
             var response = menuBusiness.AddMenuCarShop(_context, model);
+=======
+        [HttpGet("menus/{id}")]
+        public async Task<IActionResult> GetMenuById(int id){
+           MenuBusiness menuBusiness = new MenuBusiness();
+            var response = menuBusiness.GetById(_context,id);
+>>>>>>> 86479405dd9dfeb07d74628891d809b2d7cccfb3
 
             if (response.Error == false)
             {

@@ -19,7 +19,12 @@ namespace HomeFood.Business.Menu
             try
             {
                 ResultResponse<List<MenuResponse>> response = new ResultResponse<List<MenuResponse>>();
+<<<<<<< HEAD
                     var result = _context.Menu.Select( x=> new MenuResponse{
+=======
+                // var result = _context.Menu.FirstOrDefault(x=>x.MenuId==model.MenuId);
+                var result = _context.Menu.Select( x=> new MenuResponse{
+>>>>>>> 86479405dd9dfeb07d74628891d809b2d7cccfb3
                     MenuId = x.MenuId,
                     Name = x.Name,
                     Description = x.Description,
@@ -29,13 +34,25 @@ namespace HomeFood.Business.Menu
                     QuantityMenuCurrent = x.QuantityMenuCurrent,
                     MenuTypeId = x.MenuTypeId
                 } ).ToList();
+<<<<<<< HEAD
 
                 response.Data = result;
                 response.Error = false;
                 response.Message ="datos encontrados";
                 
-                return response;
+=======
                 
+                if(result.Count != 0){
+                    response.Data = result;
+                    response.Error = false;
+                    response.Message ="datos encontrados";
+                }else{
+                    response.Data = result;
+                    response.Error = true;
+                    response.Message ="No se encontraron datos";
+                }                
+>>>>>>> 86479405dd9dfeb07d74628891d809b2d7cccfb3
+                return response;
             }
             catch (Exception ex)
             {                
@@ -43,6 +60,7 @@ namespace HomeFood.Business.Menu
             }
         }
 
+<<<<<<< HEAD
         public ResultResponse<string> AddMenuCarShop(BDHomeFoodContext _context, ShopCarEntity model){
             try
             {
@@ -88,6 +106,49 @@ namespace HomeFood.Business.Menu
             {                
                 throw new Exception(ex.Message);
             }
+=======
+        public ResultResponse<MenuResponse> GetById(BDHomeFoodContext _context, int id)
+        {
+            try
+            {
+                ResultResponse<MenuResponse> response = new ResultResponse<MenuResponse>();
+                var firstresult = _context.Menu.Any(c => c.MenuId == id);
+
+                if(firstresult)
+                {
+                    var result = _context.Menu.FirstOrDefault(c => c.MenuId == id);
+
+                    MenuResponse menuResponses = new MenuResponse
+                    {
+                        MenuId = result.MenuId,
+                        Name = result.Name,
+                        Description = result.Description,
+                        CollaboratorId = result.CollaboratorId,
+                        Price = result.Price,
+                        State = result.State,
+                        QuantityMenuCurrent = result.QuantityMenuCurrent,
+                        MenuTypeId = result.MenuTypeId
+                    };
+
+                    response.Data = menuResponses;
+                    response.Error = false;
+                    response.Message = "Datos encontrados";
+
+                }else{
+                    
+                    response.Data = null;
+                    response.Error = true;
+                    response.Message = "No se encontraron datos";
+                }
+
+                return response;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }      
+>>>>>>> 86479405dd9dfeb07d74628891d809b2d7cccfb3
         }
     } 
 }
