@@ -9,7 +9,7 @@ namespace HomeFood.Helpers
 {
     public class JwtService
     {
-       private readonly string _secret;  
+        private readonly string _secret;  
         private readonly string _expDate;  
   
         public JwtService(IConfiguration config)  
