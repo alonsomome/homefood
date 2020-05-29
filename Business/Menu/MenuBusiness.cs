@@ -18,7 +18,7 @@ namespace HomeFood.Business.Menu
         {
             try{
                 ResultResponse<List<MenuResponse>> response = new ResultResponse<List<MenuResponse>>();
-                var result = _context.Menu.Select( x=> new MenuResponse{
+                var result = _context.Menu.ToList().Select( x => new MenuResponse{
                     MenuId = x.MenuId,
                     Name = x.Name,
                     Description = x.Description,
@@ -26,7 +26,15 @@ namespace HomeFood.Business.Menu
                     Price = x.Price,
                     State = x.State,
                     QuantityMenuCurrent = x.QuantityMenuCurrent,
-                    MenuTypeId = x.MenuTypeId
+                    MenuTypeId = x.MenuTypeId,
+                    Photos = _context.Photo.Where(y => y.MenuId == x.MenuId).Select(
+                        y => new PhotoResponse {
+                            PhotoId = y.PhotoId,
+                            UrlPhoto = y.UrlPhoto,
+                            State = y.State,
+                            IsMain = y.IsMain
+                        }
+                    ).ToList()
                 } ).ToList();
 
                 
@@ -67,7 +75,15 @@ namespace HomeFood.Business.Menu
                         Price = result.Price,
                         State = result.State,
                         QuantityMenuCurrent = result.QuantityMenuCurrent,
-                        MenuTypeId = result.MenuTypeId
+                        MenuTypeId = result.MenuTypeId,
+                        Photos = _context.Photo.Where(y=>y.MenuId == result.MenuId).Select(
+                            y => new PhotoResponse {
+                                PhotoId = y.PhotoId,
+                                UrlPhoto = y.UrlPhoto,
+                                State = y.State,
+                                IsMain = y.IsMain
+                            }
+                        ).ToList()
                     };
 
                     response.Data = menuResponses;

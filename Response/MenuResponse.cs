@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace HomeFood.Response
 {
     public class MenuResponse
@@ -10,7 +12,7 @@ namespace HomeFood.Response
         public string State { get; set; }
         public int? QuantityMenuCurrent { get; set; }
         public int? MenuTypeId { get; set; }
-
+        public List<PhotoResponse> Photos {get;set;} = new List<PhotoResponse>();
     }
 
 }
