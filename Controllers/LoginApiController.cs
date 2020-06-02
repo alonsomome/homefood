@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using HomeFood.Models;
 using HomeFood.Business.Login;
 using HomeFood.Entities.Login;
+using HomeFood.Helpers;
 using Microsoft.Extensions.Configuration;
 using System.Net;
 
@@ -18,12 +19,14 @@ namespace HomeFood.Controllers
     public class LoginApiController : ControllerBase
     {
         private readonly BDHomeFoodContext _context;
+        private readonly IEmailSender _emailSender;
         private IConfiguration _config;  
 
-        public LoginApiController(BDHomeFoodContext context,IConfiguration config)
+        public LoginApiController(BDHomeFoodContext context,IConfiguration config,IEmailSender emailSender)
         {
             _context = context;
             _config = config;
+            _emailSender = emailSender;
         }
         [HttpPost("collaboratorlogin")]
         public async Task<IActionResult> PostLogInCollaborator(LoginEntity model)
@@ -53,6 +56,7 @@ namespace HomeFood.Controllers
             LoginBusiness loginBusiness = new LoginBusiness();
             var response = loginBusiness.RegisterCollaborator(_context, model);
             if(response.Error == false){
+                 await _emailSender.SendEmailAsync(model.Email, "Información de registro",$"Gracias por ser parte de nuestra aplicación sus datos son : Nombre de usuario : {model.Username} , Correo : {model.Email}, # de celular : {model.Phone}");
                 return Ok(response);
             }else{
                 return BadRequest(response);
@@ -65,6 +69,7 @@ namespace HomeFood.Controllers
             LoginBusiness loginBusiness = new LoginBusiness();
             var response = loginBusiness.RegisterCustomer(_context, model);
             if(response.Error == false){
+                 await _emailSender.SendEmailAsync(model.Email, "Información de registro",$"Gracias por haberse registrado en nuestra aplicación sus datos son : Nombre de usuario : {model.Username} , Correo : {model.Email}, # de celular : {model.Phone}");
                 return Ok(response);
             }else{
                 return BadRequest(response);

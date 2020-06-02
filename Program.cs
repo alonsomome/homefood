@@ -7,17 +7,22 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore;
+using System.IO;
 
 namespace HomeFood
 {
     public class Program
     {
         public static void Main(string[] args) =>
-            BuildWebHost(args).Run();
+            BuildWebHost(args)
+            .Run();
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                //.UseIISIntegration()
+                .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
+                //.UseKestrel()
                 .Build();
     }
 }

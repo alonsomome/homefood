@@ -13,9 +13,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using HomeFood.Models;
 using Microsoft.OpenApi.Models;
 using HomeFood.Helpers;
+using HomeFood.Entities.Email;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Server.Kestrel;
 
 
 namespace HomeFood
@@ -34,8 +38,11 @@ namespace HomeFood
         {
             var connection = Configuration.GetSection("ConnectionStrings").GetSection("DefaultConnection").Value;
             services.AddDbContext<BDHomeFoodContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.Configure<EmailEntity>(Configuration.GetSection("EmailSettings"));
+            services.AddTransient<IEmailSender, EmailHelpers>();
             services.AddControllers();
             services.AddTokenAuthentication(Configuration);
+            services.AddDirectoryBrowser();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo 
@@ -60,6 +67,7 @@ namespace HomeFood
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
             });
+            //services.Configure<KestrelServerOptions>(Configuration.GetSection("Kestrel"));
         
         }
 
@@ -71,11 +79,27 @@ namespace HomeFood
                 app.UseDeveloperExceptionPage();
             }
             app.UseSwagger();
-
+            app.UseStaticFiles();
+            app.UseDefaultFiles();
+            app.UseFileServer();
+            app.UseFileServer(enableDirectoryBrowsing: true);
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), @"Contents")),
+                RequestPath = new PathString("/Contents")
+            });
+            /*app.UseDirectoryBrowser(new DirectoryBrowserOptions()
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), @"Contents")),
+                RequestPath = new PathString("/Contents")
+            });*/
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-                //c.SwaggerEndpoint("/homefood/swagger/v1/swagger.json", "My API V1");
+                //c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("/homefood/swagger/v1/swagger.json", "My API V1");
+                //c.SwaggerEndpoint("/homefood2/swagger/v1/swagger.json", "My API V1");
                 c.RoutePrefix = string.Empty;
             });
 
