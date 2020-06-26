@@ -23,5 +23,6 @@ namespace HomeFood.Response
         //public int? CollaboratorId { get; set; }
 
         public List<CollaboratorResponse> Collaborator {get;set;} = new List<CollaboratorResponse>();        
+
     }
 }

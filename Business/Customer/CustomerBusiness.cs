@@ -69,8 +69,7 @@ namespace HomeFood.Business.Customer
                                               Description = z.Description
                                           }).ToList()                                                                               
                                  }).ToList()
-                        }
-                    ).ToList()                
+                        }).ToList()                
                   };
                     response.Data = customerResponse;
                     response.Error = false;
