@@ -1,15 +1,11 @@
-﻿using System;
+
+using System;
 using System.Collections.Generic;
 
-namespace HomeFood.Models
+namespace HomeFood.Response
 {
-    public partial class Order
+    public class OrderResponse
     {
-        public Order()
-        {
-            ShopCar = new HashSet<ShopCar>();
-        }
-
         public int OrderId { get; set; }
         public decimal? TotalCost { get; set; }
         public decimal? TotalCostOrder { get; set; }
@@ -24,12 +20,8 @@ namespace HomeFood.Models
         public int? PayTypeId { get; set; }
         public int? CustomerCodePromotionId { get; set; }
         public int? CustomerId { get; set; }
-        public int? CollaboratorId { get; set; }
+        //public int? CollaboratorId { get; set; }
 
-        public virtual Collaborator Collaborator { get; set; }
-        public virtual Collaborator CollaboratorDriver { get; set; }
-        public virtual Customer Customer { get; set; }
-        public virtual CustomerCodePromotion CustomerCodePromotion { get; set; }
-        public virtual ICollection<ShopCar> ShopCar { get; set; }
+        public List<CollaboratorResponse> Collaborator {get;set;} = new List<CollaboratorResponse>();        
     }
 }

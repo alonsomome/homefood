@@ -294,14 +294,24 @@ namespace HomeFood.Models
                 entity.Property(e => e.TotalCostOrder).HasColumnType("decimal(18, 2)");
 
                 entity.HasOne(d => d.CollaboratorDriver)
-                    .WithMany(p => p.Order)
+                    .WithMany(p => p.OrderCollaboratorDriver)
                     .HasForeignKey(d => d.CollaboratorDriverId)
                     .HasConstraintName("FK_Order_Collaborator");
+
+                entity.HasOne(d => d.Collaborator)
+                    .WithMany(p => p.OrderCollaborator)
+                    .HasForeignKey(d => d.CollaboratorId)
+                    .HasConstraintName("FK_Order_Collaborator1");
 
                 entity.HasOne(d => d.CustomerCodePromotion)
                     .WithMany(p => p.Order)
                     .HasForeignKey(d => d.CustomerCodePromotionId)
                     .HasConstraintName("FK_Order_CustomerCodePromotion");
+
+                entity.HasOne(d => d.Customer)
+                    .WithMany(p => p.Order)
+                    .HasForeignKey(d => d.CustomerId)
+                    .HasConstraintName("FK_Order_Customer");
             });
 
             modelBuilder.Entity<Photo>(entity =>

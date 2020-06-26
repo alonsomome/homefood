@@ -9,6 +9,7 @@ namespace HomeFood.Models
         {
             Address = new HashSet<Address>();
             CustomerCodePromotion = new HashSet<CustomerCodePromotion>();
+            Order = new HashSet<Order>();
             ShopCar = new HashSet<ShopCar>();
         }
 
@@ -27,6 +28,7 @@ namespace HomeFood.Models
 
         public virtual ICollection<Address> Address { get; set; }
         public virtual ICollection<CustomerCodePromotion> CustomerCodePromotion { get; set; }
+        public virtual ICollection<Order> Order { get; set; }
         public virtual ICollection<ShopCar> ShopCar { get; set; }
     }
 }

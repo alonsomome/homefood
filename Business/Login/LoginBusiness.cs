@@ -46,7 +46,7 @@ namespace HomeFood.Business.Login
                             return response;
                         }
                         using(var ts = new TransactionScope()){
-                            Customer customer = new Customer();
+                            Models.Customer customer = new Models.Customer();
                             _context.Customer.Add(customer);
                             customer.Names = model.Names;
                             customer.LastNames = model.LastNames;
@@ -223,7 +223,7 @@ namespace HomeFood.Business.Login
             response.Message = "Inicio de sesión satisfactorio";
         }
 
-        public static void LoginTokenCustomer (IConfiguration _config, Customer customer,ResultResponse<LoginCustomerResponse> response )
+        public static void LoginTokenCustomer (IConfiguration _config, Models.Customer customer,ResultResponse<LoginCustomerResponse> response )
         {
             var jwt = new JwtService(_config);  
             var token = jwt.GenerateSecurityToken(customer.Email); 
