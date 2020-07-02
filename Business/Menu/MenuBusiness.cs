@@ -126,7 +126,7 @@ namespace HomeFood.Business.Menu
                 }
 
                 using (var ts = new TransactionScope()){
-                    ShopCar shopCar = new ShopCar();
+                    Models.ShopCar shopCar = new Models.ShopCar();
 
                     _context.ShopCar.Add(shopCar);
 
@@ -175,7 +175,7 @@ namespace HomeFood.Business.Menu
                 }
 
                 using (var ts = new TransactionScope()){
-                    ShopCar shopCar = new ShopCar();
+                    Models.ShopCar shopCar = new Models.ShopCar();
 
                     shopCar = _context.ShopCar.FirstOrDefault(x=>x.ShopCarId == model.ShopCarId);
 
@@ -211,7 +211,7 @@ namespace HomeFood.Business.Menu
                 ResultResponse<string> response = new ResultResponse<string>();
     
                 using (var ts = new TransactionScope()){
-                    ShopCar shopCar = new ShopCar();
+                    Models.ShopCar shopCar = new Models.ShopCar();
 
                     shopCar = _context.ShopCar.FirstOrDefault(x=>x.ShopCarId == model.ShopCarId);
 

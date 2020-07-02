@@ -98,8 +98,10 @@ namespace HomeFood
             app.UseSwaggerUI(c =>
             {
                 //c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-                c.SwaggerEndpoint("/homefood/swagger/v1/swagger.json", "My API V1");
+                //c.SwaggerEndpoint("/homefood/swagger/v1/swagger.json", "My API V1");
                 //c.SwaggerEndpoint("/homefood2/swagger/v1/swagger.json", "My API V1");
+                string swaggerJsonBasePath = string.IsNullOrWhiteSpace(c.RoutePrefix) ? "." : "..";
+                c.SwaggerEndpoint($"{swaggerJsonBasePath}/swagger/v1/swagger.json", "My API V1");
                 c.RoutePrefix = string.Empty;
             });
 
