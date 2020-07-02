@@ -35,7 +35,8 @@ namespace HomeFood.Controllers
             }
         }
         [HttpGet("menus/{id}")]
-        public async Task<IActionResult> GetMenuById(int id){
+        public async Task<IActionResult> GetMenuById(int id)
+        {
            MenuBusiness menuBusiness = new MenuBusiness();
             var response = menuBusiness.GetById(_context,id);
             if (response.Error == false)
@@ -47,8 +48,8 @@ namespace HomeFood.Controllers
                 return BadRequest(response);
             }
         }
-
-    [HttpPost("addmenushopcars")]
+        
+        [HttpPost("addmenushopcars")]
         public async Task<IActionResult> AddMenuCarShop(ShopCarEntity model)
         {
             MenuBusiness menuBusiness = new MenuBusiness();
@@ -86,6 +87,20 @@ namespace HomeFood.Controllers
             MenuBusiness menuBusiness = new MenuBusiness();
 
             var response = menuBusiness.DeleteMenuCarShop(_context, model);
+                  if (response.Error == false)
+            {
+                return Ok(response);
+            }
+            else
+            {
+                return BadRequest(response);
+            }
+        }
+
+        [HttpPost("addordersshops")]
+        public async Task<IActionResult> AddOrderShop(OrderShopEntity model){
+            MenuBusiness menuBusiness = new MenuBusiness();
+            var response = menuBusiness.AddOrderShop(_context, model);
                   if (response.Error == false)
             {
                 return Ok(response);

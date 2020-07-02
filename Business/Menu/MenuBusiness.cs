@@ -232,5 +232,39 @@ namespace HomeFood.Business.Menu
                 throw new Exception(ex.Message);
             }
         }
+
+        public ResultResponse<string> AddOrderShop(BDHomeFoodContext _context, OrderShopEntity model)
+        {
+            try
+            {
+                ResultResponse<string> response = new ResultResponse<string>();
+    
+                using (var ts = new TransactionScope()){
+                    Order order = new Order();
+
+                    _context.Orden.Add(order);
+
+                    order.State = ConstantHelpers.Estado.Activo;
+                    order.CustomerId = model.CustomerId;
+                    order.CollaboratorId = model.CollaboratorId;
+                    order.TotalCost = 0;
+                    order.TotalCostOrder = 0;
+                    order.TotalCostDriver = 0;
+
+                    _context.SaveChanges();
+                    
+                    response.Data = null;
+                    response.Error = false;
+                    response.Message = "Orden de compra creado";
+
+                    ts.Complete();
+                }
+                return response;
+            }
+            catch (Exception ex)
+            {                
+                throw new Exception(ex.Message);
+            }
+        }
     } 
 }

@@ -432,3 +432,12 @@ D:/UPC 2020_01/SCRUM/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.pdb
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.xml
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.pdb
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.genruntimeconfig.cache
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/web.config
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/appsettings.Development.json
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/appsettings.json
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/HomeFood.deps.json
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/HomeFood.runtimeconfig.json
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/4/.DS_Store
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/5/1.jpg
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/5/2.jpeg
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/5/3.jpg

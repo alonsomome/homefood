@@ -23,8 +23,12 @@ namespace HomeFood.Models
         public bool? Received { get; set; }
         public int? PayTypeId { get; set; }
         public int? CustomerCodePromotionId { get; set; }
+        public int? CustomerId { get; set; }
+        public int? CollaboratorId { get; set; }
 
+        public virtual Collaborator Collaborator { get; set; }
         public virtual Collaborator CollaboratorDriver { get; set; }
+        public virtual Customer Customer { get; set; }
         public virtual CustomerCodePromotion CustomerCodePromotion { get; set; }
         public virtual ICollection<ShopCar> ShopCar { get; set; }
     }

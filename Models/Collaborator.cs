@@ -8,7 +8,8 @@ namespace HomeFood.Models
         public Collaborator()
         {
             Menu = new HashSet<Menu>();
-            Order = new HashSet<Order>();
+            OrderCollaborator = new HashSet<Order>();
+            OrderCollaboratorDriver = new HashSet<Order>();
         }
 
         public int CollaboratorId { get; set; }
@@ -29,6 +30,7 @@ namespace HomeFood.Models
 
         public virtual CollaboratorType CollaboratorType { get; set; }
         public virtual ICollection<Menu> Menu { get; set; }
-        public virtual ICollection<Order> Order { get; set; }
+        public virtual ICollection<Order> OrderCollaborator { get; set; }
+        public virtual ICollection<Order> OrderCollaboratorDriver { get; set; }
     }
 }
