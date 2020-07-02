@@ -49,58 +49,12 @@ namespace HomeFood.Controllers
             }
         }
         
-        [HttpPost("addmenushopcars")]
-        public async Task<IActionResult> AddMenuCarShop(ShopCarEntity model)
+        [HttpPost("addordersandmenu")]
+        public async Task<IActionResult> AddMenuCarShop(OrderShopEntity model)
         {
             MenuBusiness menuBusiness = new MenuBusiness();
 
-            var response = menuBusiness.AddMenuCarShop(_context, model);
-                  if (response.Error == false)
-            {
-                return Ok(response);
-            }
-            else
-            {
-                return BadRequest(response);
-            }
-        }
-
-        [HttpPut("editmenushopcars")]
-        public async Task<IActionResult> EditMenuCarShop(ShopCarEntity model)
-        {
-            MenuBusiness menuBusiness = new MenuBusiness();
-
-            var response = menuBusiness.EditMenuCarShop(_context, model);
-                  if (response.Error == false)
-            {
-                return Ok(response);
-            }
-            else
-            {
-                return BadRequest(response);
-            }
-        }
-
-        [HttpPost("deletemenushopcars")]
-        public async Task<IActionResult> DeleteMenuCarShop(ShopCarEntity model)
-        {
-            MenuBusiness menuBusiness = new MenuBusiness();
-
-            var response = menuBusiness.DeleteMenuCarShop(_context, model);
-                  if (response.Error == false)
-            {
-                return Ok(response);
-            }
-            else
-            {
-                return BadRequest(response);
-            }
-        }
-
-        [HttpPost("addordersshops")]
-        public async Task<IActionResult> AddOrderShop(OrderShopEntity model){
-            MenuBusiness menuBusiness = new MenuBusiness();
-            var response = menuBusiness.AddOrderShop(_context, model);
+            var response = menuBusiness.AddOrderAndMenus(_context, model);
                   if (response.Error == false)
             {
                 return Ok(response);

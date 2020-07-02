@@ -90,6 +90,50 @@ namespace HomeFood.Business.Customer
                 throw new Exception(ex.Message);
             }
         
-        }        
+        }   
+        public ResultResponse<CustomerProfileResponse> getProfileCustomer(BDHomeFoodContext _context,int costumerid)
+        {
+            try
+            {
+                ResultResponse<CustomerProfileResponse> response = new ResultResponse<CustomerProfileResponse>();
+                var customer = _context.Customer.Any(c => c.CustomerId == costumerid);
+                if(customer)
+                {
+                  var result = _context.Customer.FirstOrDefault(c=>c.CustomerId ==costumerid );
+                  CustomerProfileResponse customerProfileResponse = new CustomerProfileResponse
+                  {
+                      CustomerId = result.CustomerId,
+                      Names = result.Names,
+                      LastNames = result.LastNames,
+                      DocumentoIdentity = result.DocumentoIdentity,
+                      Email = result.Email,
+                      Phone =result.Phone,
+                      Birthdate = result.Birthdate,
+                      Username = result.Username,
+                      State = result.State,
+                      CreateDate = result.CreateDate,
+                      UpdateDate = result.UpdateDate              
+                  };
+                    
+                    response.Data = customerProfileResponse;
+                    response.Error = false;
+                    response.Message = "Datos encontrados";
+
+                }
+                else
+                {
+                    response.Data = null;
+                    response.Error = true;
+                    response.Message = "No se encontraron datos";                    
+                }
+                return response;
+            }
+            catch (Exception ex)
+            {
+                
+                throw new Exception(ex.Message);
+            }
+        
+        }       
     }
 }

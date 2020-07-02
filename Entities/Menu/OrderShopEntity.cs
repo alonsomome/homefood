@@ -1,9 +1,11 @@
+using System;
+using System.Collections.Generic;
+
 namespace HomeFood.Entities.Menu
 {
     public class OrderShopEntity
     {
-        public int OrderId {set;get;}
         public int? CustomerId {set;get;}
-        public int? CollaboratorId { set;get;}
+        public List<MenuEntity> LstMenu { set;get;} = new List<MenuEntity>();
     }
 }

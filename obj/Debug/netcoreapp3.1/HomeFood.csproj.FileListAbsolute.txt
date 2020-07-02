@@ -143,21 +143,66 @@
 <<<<<<< HEAD
 =======
 >>>>>>> 86479405dd9dfeb07d74628891d809b2d7cccfb3
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/HomeFood.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/HomeFood.pdb
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Microsoft.OpenApi.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.Swagger.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+D:/UPC 2020_01/SCRUM/HomeFood/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+>>>>>>> 3fcbffe5ff0587e734130862253c3a6028a7b36d
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.csprojAssemblyReference.cache
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.csproj.CoreCompileInputs.cache
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.MvcApplicationPartsAssemblyInfo.cs
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.MvcApplicationPartsAssemblyInfo.cache
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.AssemblyInfoInputs.cache
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.AssemblyInfo.cs
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/web.config
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/appsettings.Development.json
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/appsettings.json
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/HomeFood.deps.json
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/HomeFood.runtimeconfig.json
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/.DS_Store
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/3/1.jpg
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/3/2.jpg
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/3/3.jpeg
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/4/.DS_Store
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/4/1.jpg
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/4/2.jpg
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/4/3.jpg
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/5/1.jpg
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/5/2.jpeg
+/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/5/3.jpg
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/HomeFood.deps.json
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/HomeFood.runtimeconfig.json
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/HomeFood.runtimeconfig.dev.json
@@ -291,49 +336,3 @@
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.xml
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.pdb
 /Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/obj/Debug/netcoreapp3.1/HomeFood.genruntimeconfig.cache
-<<<<<<< HEAD
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/web.config
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/appsettings.Development.json
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/appsettings.json
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/HomeFood.deps.json
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Publishs/HomeFood.runtimeconfig.json
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/4/.DS_Store
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/5/1.jpg
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/5/2.jpeg
-/Users/josemariaingavillafuerte/Documents/Net_Core/HF/HomeFood/bin/Debug/netcoreapp3.1/Contents/Menus/5/3.jpg
-=======
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\HomeFood.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\HomeFood.pdb
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-D:\UPC 2020_01\SCRUM\HomeFood\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
->>>>>>> 3fcbffe5ff0587e734130862253c3a6028a7b36d

@@ -23,7 +23,17 @@ namespace HomeFood.Controllers
             }else{
                 return BadRequest(response);
             }
-        }      
-        
-    }
+        }    
+
+        [HttpGet("getprofilecustomer/{id}")]
+        public async Task<IActionResult> getProfileCustomer(int id){
+                CustomerBusiness customerBusiness = new CustomerBusiness();
+                var response = customerBusiness.getProfileCustomer(_context,id);
+                if(response.Error == false){
+                    return Ok(response);
+                }else{
+                    return BadRequest(response);
+                }
+        }          
+    } 
 }

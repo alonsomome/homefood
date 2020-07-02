@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HomeFood</name>
+    </assembly>
+    <members>
+        <member name="M:HomeFood.Business.Menu.MenuBusiness.AddOrderAndMenus(HomeFood.Models.BDHomeFoodContext,HomeFood.Entities.Menu.OrderShopEntity)">
+            CREATE ORDER AND SHOP CAR*
+        </member>
+    </members>
+</doc>
